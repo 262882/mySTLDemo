@@ -6,3 +6,6 @@ all:
 
 clean:
 	rm helloworld myecho mysort mygrep
+
+lint:
+	cpplint --filter=-legal/copyright *.cpp

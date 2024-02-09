@@ -6,9 +6,16 @@ using std::endl;
 using std::string;
 
 int main(int argc, char *argv[] ) {
+    string filter;
     string target;
-    string filter = argv[1];
     int status = EXIT_FAILURE;
+
+    if (argc != 2) {
+        cout << "One command line argument required..." << endl;
+        return EXIT_FAILURE;
+    }
+
+    filter = argv[1];
     cout << "Found matches for: " << filter << endl;
 
     while (std::getline(std::cin, target)) {
