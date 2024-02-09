@@ -3,9 +3,10 @@ all:
 	g++ -std=c++11 -Wall myecho.cpp -o myecho
 	g++ -std=c++11 -Wall mysort.cpp -o mysort
 	g++ -std=c++11 -Wall mygrep.cpp -o mygrep
+	g++ -std=c++11 -Wall reversefile.cpp -o reversefile
 
 clean:
-	rm helloworld myecho mysort mygrep
+	rm helloworld myecho mysort mygrep reversefile
 
 lint:
 	cpplint --filter=-legal/copyright *.cpp
