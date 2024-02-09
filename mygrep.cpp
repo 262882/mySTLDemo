@@ -5,20 +5,19 @@ using std::cout;
 using std::endl;
 using std::string;
 
-int main(int argc, char *argv[] ){  
-
+int main(int argc, char *argv[] ) {
     string target;
     string filter = argv[1];
     int status = EXIT_FAILURE;
     cout << "Found matches for: " << filter << endl;
 
-    while (std::getline(std::cin, target)){
-        if (target.find(filter) != string::npos){
+    while (std::getline(std::cin, target)) {
+        if (target.find(filter) != string::npos) {
             status = 0;
             cout << target << endl;
-        }           
+        }
     }
-    if (status){
+    if (status) {
         cout << "None" << endl;
         return EXIT_FAILURE;  // Only portable way to signal failure
     }
