@@ -1,6 +1,6 @@
 #include <iostream>
-using std::cout;
-using std::endl;
+using std::cout;  // std is the only builtin namespace
+using std::endl;  // Other namespaces are self or external library (boost)
 
 int main(int argc, char *argv[] ){  
     // argv is a pointer to a C style array of pointers to character arrays
